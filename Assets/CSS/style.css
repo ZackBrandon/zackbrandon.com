@@ -528,37 +528,45 @@ img {
 }
 
 .skills__html {
-    width: 90%;
-}
-.skills__css {
-    width: 80%;
-}
-.skills__js {
-    width: 60%;
-}
-.skills__react {
     width: 85%;
 }
-.skills__php {
-    width: 80%;
+.skills__css {
+    width: 70%;
 }
+.skills__js {
+    width: 70%;
+}
+/* Figma */
+.skills__react {
+    width: 90%;
+}
+/* Team leadership */
+.skills__php {
+    width: 95%;
+}
+/* Organizastion */
 .skills__node {
     width: 70%;
 }
+/* Communication */
 .skills__firebase {
     width: 90%;
 }
+/* Product Vision */
 .skills__python {
-    width: 55%;
-}
-.skills__figma {
     width: 90%;
 }
+/*API Management*/
+.skills__figma {
+    width: 70%;
+}
+/* Python */
 .skills__sketch {
     width: 90%;
 }
+/* Microsoft Powershell */
 .skills__photoshop {
-    width: 85%;
+    width: 75%;
 }
 
 .skills__close .skills__list {
@@ -1266,6 +1274,7 @@ img {
 /* For large devices */
 
 @media screen and (min-width: 1024px) {
+
     .header,
     .main,
     .footer__container {
@@ -1300,11 +1309,20 @@ img {
         bottom: -4.5rem;
     }
 
-    .contact__form {
-        width: 460px;
+    .contact {
+        margin: auto;
 
     }
     .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
     }
+
+}
+
+.about,
+.skills,
+.services,
+.portfolio,
+.contact{
+    scroll-margin-top: 40px;
 }
