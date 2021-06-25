@@ -75,14 +75,14 @@
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
+                            <a href="https://www.github.com/ZackBrandon" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
                             <a href="https://zackbrandon.medium.com/" target="_blank" class="home__social-icon">
                                 <i class="uil uil-document-layout-left"></i>
                             </a>
                             <a href="https://twitter.com/heyitszackb" target="_blank" class="home__social-icon">
                                 <i class="uil uil-twitter-alt"></i>
-                            </a>
-                            <a href="https://www.github.com/ZackBrandon" target="_blank" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>
                             </a>
                         </div>
                         
@@ -100,7 +100,7 @@
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
 
-                                    <image class="home__blob-img" x='5' y='24' xlink:href="assets/images/Zack.PNG"/>
+                                    <image class="home__blob-img" x='5' y='24' xlink:href="Assets/Images/Zack.PNG"/>
                                 </g>
                             </svg>
                         </div>
@@ -110,9 +110,14 @@
                             <h3 class="home__subtitle">Computer Science - Taylor University</h3>
                             <p class="home__description">I am a sophomore undergraduate student at Taylor University
                                  in Upland, Indiana studying computer science</p>
-                            <a href="#contact" class="button button--flex">
-                                Contact Me <i class="uil uil-message button__icon"></i>
-                            </a>
+                            <div class="home__buttons">
+                                <a href="#contact" class="button button--flex">
+                                    Contact Me <i class="uil uil-message button__icon"></i>
+                                </a>
+                                <a id="resume__button__top" href="Assets/PDF/ZackBrandonResume5-31-21.pdf" target="_blank" class="button button--flex">
+                                   View Resume<i class="uil uil-search button__icon"></i>
+                               </a>
+                            </div>
                         </div>
                     </div>
 
@@ -127,13 +132,30 @@
             </section>
 
             <!-- ABOUT -->
+            <section class="wrapper">
+                <div class="content__wrapper">
+                    <h2>Pick a color</h2>
+                    
+                    <div id="colors">
+                        <li class="color-circle" data-color="#2ecc71"></li>
+                        <li class="color-circle" data-color="#D64A4B"></li>
+                        <li class="color-circle" data-color="#8e44ad"></li>
+                        <li class="color-circle" data-color="#46a1de"></li>
+                        <li class="color-circle" data-color="#bdc3c7"></li>
+                        <li class="color-circle active-color" data-color="#bdc3c7"></li>
+                        <li class="color-circle" data-color="#bdc3c7"></li>
+                        <li class="color-circle" data-color="#bdc3c7"></li>
+                    </div>
+                </div>
+            </section>
+
 
             <section class="about section" id="about">
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle">My story</span>
 
                 <div class="about__container container grid">
-                    <img src="Assets/Images/about.jpg" alt="" class="about__img">
+                    <img src="Assets/Images/About.jpg" alt="" class="about__img">
                     <div class="about__data">
                         <div class="about__info">
                             <div>
@@ -155,7 +177,7 @@
                          piano, and working on fun computer projects. I'm an avid outdoorsman - I love hiking and camping in the outdoors with
                         family and friends. I am also an active participant and adult leader in my local Boy Scout troop.</p>
                          <div class="about__buttons">
-                             <a href="Assets/PDF/Zack_Brandon_Resume2019.pdf" class="button button--flex">
+                             <a href="Assets/PDF/ZackBrandonResume5-31-21.pdf" target="_blank" class="button button--flex">
                                 View Resume<i class="uil uil-search button__icon"></i>
                             </a>
                          </div>
@@ -506,7 +528,7 @@
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Created this webpage from scratch with raw HTML, CSS, and JavaScript</p>
+                                        <p>Created this webpage from scratch with raw PHP, HTML, CSS, and JavaScript</p>
                                         </p>
                                     </li>
                                     <li class="services__modal-service">
@@ -562,7 +584,7 @@
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
                                         <p>Led over 5,000 scouts and worked with a team to manage
-                                        an operating budget of over $250,000 as the <br>Lodge Vice-Chief
+                                        an operating budget of over $250,000 as the Lodge Vice-Chief
                                         </p>
                                     </li>
                                     <li class="services__modal-service">
@@ -618,51 +640,63 @@
             <!-- PORTFOLIO -->
             <section class="portfolio section" id="portfolio">
                 <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Most recent work</span>
+                <span class="section__subtitle">My most recent projects</span>
 
                 <div class="portfolio__container container swiper-container">
                     <div class="swiper-wrapper">
                         <!-- PORTFOLIO 1 -->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="Assets/Images/portfolio1.jpeg" alt="" class="portfolio__img">
+                            <img src="Assets/Images/infection.gif" alt="" class="portfolio__img">
                             
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Modern Website</h3>
-                                <p class="portfolio__description">This website is adaptable to all devices, with UI
-                                    components and animated interactions.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
+                                <h3 class="portfolio__title">Infection Simulation</h3>
+                                <p class="portfolio__description">This simulation handles a dynamic number of viruses and diseases. The controller can manipulate diseases on the screen with various tools I've implemented.</p>
+                                <a href="https://github.com/ZackBrandon/Cellular-Automata" target="_blank" class="button button--flex button--small portfolio__button">
+                                    See My Code
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
                         </div>
                         <!-- PORTFOLIO 2 -->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="Assets/Images/portfolio2.jpeg" alt="" class="portfolio__img">
+                            <img src="Assets/Images/weather.gif" alt="" class="portfolio__img">
+                            
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Weather App</h3>
+                                <p class="portfolio__description">This project utilizes API calls to openWeather to provide a dynamic display of local and global weather data. Any zip code in the United States can be accessed via this app.</p>
+                                <a href="https://github.com/ZackBrandon/Weather-App" target="_blank" class="button button--flex button--small portfolio__button">
+                                    See My Code
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                          <!-- PORTFOLIO 3 -->
+                          <div class="portfolio__content grid swiper-slide">
+                            <img src="Assets/Images/battleships.gif" alt="" class="portfolio__img">
+                            
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Battleships AI Simulator</h3>
+                                <p class="portfolio__description">Using C++ and probability density functions, I created an artificially intelligent program to play the popular game 'Battleships'. The algorithm I came up with won the competition at Taylor University.</p>
+                                <a href="https://github.com/ZackBrandon/battleships/tree/master" target="_blank" class="button button--flex button--small portfolio__button">
+                                    See My Code
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- PORTFOLIO 4 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="Assets/Images/calc.png" alt="" class="portfolio__img">
                             
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Command Line Math Interpreter</h3>
-                                <p class="portfolio__description">Input is passed through a lexer, parser, and finally an interpreter to determine the value of the output.</p>
+                                <p class="portfolio__description">Input is passed through a lexer, parser, and finally an interpreter to determine the value of the output. The program uses nodes to correctly determine the order of operations.</p>
                                 <a href="https://github.com/ZackBrandon/MathInterpreter/tree/master" target="_blank" class="button button--flex button--small portfolio__button">
-                                    Git Repo
+                                    See My Code
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
                         </div>
-                        <!-- PORTFOLIO 3 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="Assets/Images/portfolio3.jpeg" alt="" class="portfolio__img">
-                            
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Online Store</h3>
-                                <p class="portfolio__description">This website is adaptable to all devices, with UI
-                                    components and animated interactions.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
+                    
                     </div>
 
                     <!-- Add Arrows -->
@@ -683,22 +717,22 @@
                 <div class="project__bg">
                     <div class="project__container container grid">
                         <div class="project__data">
-                            <h2 class="project__title">You have a new project</h2>
-                            <p class="project__description">Contact me now and get a 30% discount on your new project!</p>
+                            <h2 class="project__title">Learn More</h2>
+                            <p class="project__description">If you'd like to learn more about me, don't hesitate to reach out!</p>
                             <a href="#contact" class="button button--flex button--white">
                                 Contact Me
                                 <i class="uil uil-message project__icon button__icon"></i>
                             </a>
                         </div>
 
-                        <img src="Assets/Images/project.png" alt="" class="project__img">
+                        <img src="Assets/Images/zackCropped.png" alt="" class="project__img">
                     </div>
                 </div>
             </section>
             <!-- TESTIMONIAL -->
             <section class="testimonial section">
-                <h2 class="section__title">Testimonial</h2>
-                <span class="section__subtitle">My Client Feedback</span>
+                <h2 class="section__title">Quirky Facts About Me</h2>
+                <span class="section__subtitle">Get to know me better</span>
 
                 <div class="testimonial__container container swiper-container">
                     <div class="swiper-wrapper">
@@ -782,52 +816,55 @@
             <!-- CONTACT ME -->
             <section class="contact section" id="contact">
                 <h2 class="section__title">Contact Me</h2>
-                <span class="section__subtitle">Get in touch</span>
+                <span class="section__subtitle">Send me a message!</span>
 
                 <div class="contact__container container">
-                    <div>
-                        <div class="contact__information">
+                    <div class="contact__cards">
+                        <!-- <div class="contact__information">
                             <i class="uil uil-phone contact__icon"></i>
 
                             <div>
                                 <h3 class="contact__title">Call Me</h3>
                                 <span class="contact__subtitle">999-777-666</span>
                             </div>
-                        </div>
-                        <div class="contact__information">
+                        </div> -->
+                        <!-- <div class="contact__information">
                             <i class="uil uil-envelope contact__icon"></i>
 
                             <div>
-                                <h3 class="contact__title">Email</h3>
+                                <h3 class="contact__title">My Email</h3>
                                 <span class="contact__subtitle">zack_brandon@taylor.edu</span>
                             </div>
                         </div>
                         <div class="contact__information">
-                            <i class="uil uil-phone contact__icon"></i>
+                            <i class="uil uil-map-marker contact__icon"></i>
 
                             <div>
-                                <h3 class="contact__title">Location</h3>
+                                <h3 class="contact__title">My Location</h3>
                                 <span class="contact__subtitle">United States</span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
-                    <form id="contact-form" action="form.php" method="post" class="contact__form grid">
+                    <form id="contact-form" action="form.php" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
+                                <label for="name" class="contact__label">Your Name</label>
                                 <input required name="name" type="text" class="contact__input">
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
+                                <label for="email" class="contact__label">Your Email</label>
                                 <input required type="email" name="email" class="contact__input">
                             </div>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
+                            <label for="message" class="contact__label">Your Message</label>
                             <textarea required name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
                         </div>
-                        <input type="submit" class="button button--flex button--small submit" value="Contact Me">
+                        <button type="submit" class="submit button button--flex">
+                            Send
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </button>
                         <!-- <div>
                             <a href="" class="button button--flex">
                                 Send Message
@@ -860,20 +897,23 @@
                     </ul>
 
                     <div class="footer__socials">
-                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                        <a href="https://www.facebook.com/zack.brandon.98871" target="_blank" class="footer__social">
                             <i class="uil uil-facebook-f"></i>
                         </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                        <a href="https://www.instagram.com/heyitszackb/?hl=en" target="_blank" class="footer__social">
                             <i class="uil uil-instagram"></i>
                         </a>
-                        <a href="https://www.twitter.com/" target="_blank" class="footer__social">
+                        <a href="https://twitter.com/heyitszackb" target="_blank" class="footer__social">
                             <i class="uil uil-twitter-alt"></i>
                         </a>
                     </div>
                 </div>
 
                 <p class="footer__copy">&#169; Zack Brandon - All rights reserved</p>
+                <p class="footer__copy"><i>Thanks to <u><a target="_blank" href="https://www.youtube.com/channel/UCgkDs77BoEhMIgRUB4MKrtQ">Bedimcode on YouTube</a></u> for inspiration for this project.</i></p>
             </div>
+            
+
         </footer>
 
         <!-- SCROLL TOP -->
@@ -887,5 +927,8 @@
 
         <!-- MAIN JS -->
         <script src="Assets/JS/main.js"></script>
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </body>
 </html>

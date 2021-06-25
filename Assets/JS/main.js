@@ -209,3 +209,46 @@ themeButton.addEventListener('click', () => {
 //Close the popup windows by clicking anywhere outside of them.
 
 //Link to the bemicode tutorial where I learned how to make this website
+
+
+//Color switcher
+// Get the container elements
+var btnContainer = document.getElementById("colors");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("color-circle");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active-color");
+    current[0].className = current[0].className.replace(" active-color", "");
+    this.className += " active-color";
+    var r = document.querySelector(':root');
+    //Button 1
+    if (btns[0].classList.contains("active-color")) {
+        r.style.setProperty('--hue-color', 1);
+    }
+    if (btns[1].classList.contains("active-color")) {
+        r.style.setProperty('--hue-color', 20);
+    }
+    if (btns[2].classList.contains("active-color")) {
+        r.style.setProperty('--hue-color', 50);
+    }
+    if (btns[3].classList.contains("active-color")) {
+        r.style.setProperty('--hue-color', 130);
+    }
+    if (btns[4].classList.contains("active-color")) {
+        r.style.setProperty('--hue-color', 170);
+    }
+    if (btns[5].classList.contains("active-color")) {
+        r.style.setProperty('--hue-color', 220);
+    }
+    if (btns[6].classList.contains("active-color")) {
+        r.style.setProperty('--hue-color', 250);
+    }
+    if (btns[7].classList.contains("active-color")) {
+        r.style.setProperty('--hue-color', 283);
+    }
+  });
+}
