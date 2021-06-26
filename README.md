@@ -4,7 +4,15 @@ How to edit zackbrandon.com
 
 2). Push to staging-ground branch, viewing content changes on the localhost inside of VScode. Once the changes are good, push to staging-ground.
 
-3). Go into gitHub and create a merge request merging staging-ground and main.
+3). Go into gitHub.
+
+4). Inside the 'main' branch, click 'pull requests'.
+
+5). Click 'New pull request'.
+
+6). Edit the little picture so that it looks like: main <- staging-ground
+
+7). Click 'Create pull request'.
 
 4). Approve the merge request.
 
