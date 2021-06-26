@@ -466,6 +466,9 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
     text-align: center;
 }
 
+.about__link-text {
+    color: var(--first-color);
+}
 .about__buttons {
     display: flex;
     justify-content: center;
