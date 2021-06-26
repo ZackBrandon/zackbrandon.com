@@ -468,6 +468,11 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
 
 .about__link-text {
     color: var(--first-color);
+    font-weight: var(--font-medium);
+}
+
+.about__link-text:hover {
+    text-decoration: underline;
 }
 .about__buttons {
     display: flex;
@@ -783,8 +788,12 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
+    transition: 0.1s;
 }
 
+.portfolio__img:hover {
+    transform: scale(0.98);
+}s
 .portfolio__title {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-5);
