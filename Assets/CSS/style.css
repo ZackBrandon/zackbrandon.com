@@ -156,7 +156,16 @@ img {
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
 }
+.text__link {
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+    color: var(--text-color);
+    text-decoration: underline;
+}
 
+.text__link:hover {
+    color: var(--first-color);
+}
 .section__title,
 .section__subtitle {
     text-align: center;
@@ -467,12 +476,15 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
 }
 
 .about__link-text {
-    color: var(--first-color);
+    /* color: var(--first-color); */
+    color: var(--text-color);
     font-weight: var(--font-medium);
+    text-decoration: underline;
 }
 
 .about__link-text:hover {
     text-decoration: underline;
+    color: var(--first-color);
 }
 .about__buttons {
     display: flex;
@@ -546,6 +558,9 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
     background-color: var(--first-color);
 }
 
+.skills__webflow {
+    width: 95%;
+}
 .skills__html {
     width: 85%;
 }
@@ -643,14 +658,6 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
     margin-bottom: var(--mb-1);
 }
 
-.qualification__link {
-    color: var(--text-color);
-    text-decoration: underline;
-}
-
-.qualification__link:hover {
-    color: var(--first-color);
-}
 
 .qualification__calendar {
     font-size: var(--smaller-font-size);
@@ -1654,3 +1661,50 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
 #colors > li:nth-child(8) {
     background-color: hsl(283, 69%, 61%);
 }
+
+
+
+
+/* ========== BLOG ========== */
+
+.article__wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme-darker);
+  }
+
+  .devArticle {
+    margin: 1%;
+    display: flex;
+    border: 2px solid;
+    border-color: var(--first-color);
+    border-radius: 5%;
+    width: 450px;
+    min-height: 180px;
+    padding: 20px;
+    padding-left: 50px;
+    align-items: center;
+    background-color: var(--first-color-second);
+  }
+  #devArticle {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+  }
+  #profile_image {
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .article-info {
+    display: flex;
+  }
+  .article-info p {
+    margin: 5px;
+  }
+  #tags {
+    color: grey;
+  }
+  
