@@ -264,22 +264,25 @@ const api_url = "https://dev.to/api/articles?username=ben";
 async function getArticle() {
   const response = await fetch(api_url);
   const data = await response.json();
-
   const title = data[0].title;
   const link = data[0].url;
   const profilePic = data[0].user.profile_image;
   const tag = data[0].tag_list;
   const name = data[0].user.username;
-
+  const date = data[0].readable_publish_date;
+  const article = data[0].user.name;
+  const read = data[0].reading_time_minutes;
   document.getElementById("article_title").textContent = title;
   document.getElementById("devArticle").href = link;
   document.getElementById("profile_image").src = profilePic;
   document.getElementById("tags").textContent = tag.map(i => "#" + i);
   document.getElementById("username").textContent = "@" + name;
-
+  document.getElementById("articleBy").textContent = "By " + article;
+  document.getElementById("publishedDate").textContent = date;
+  document.getElementById("readTime").textContent = read + " minute read";
   //For mulitple articles that you want to display
   function displayMultipleArticles() {
-    for (let i = 1; i < 4; i++) {
+    for (let i = 1; i < 3; i++) {
       let element = document.createElement("div"); //container
       element.className = "devArticle";
 
@@ -288,7 +291,19 @@ async function getArticle() {
       articleLink.target = "_blank";
       articleLink.href = data[i].url;
 
-      let theTitle = document.createElement("h1"); //title
+      let publishedDate = document.createElement("p");
+      publishedDate.id = "publishedDate";
+      publishedDate.textContent = data[i].readable_publish_date;
+
+      let articleBy = document.createElement("p");
+      articleBy.id = "articleBy";
+      articleBy.textContent = "By " + data[i].user.name;
+
+      let readTime = document.createElement("p");
+      readTime.id = "readTime";
+      readTime.textContent = data[i].reading_time_minutes + " minute read";
+
+      let theTitle = document.createElement("h3"); //title
       theTitle.id = "article_title";
       theTitle.textContent = data[i].title;
 
@@ -302,6 +317,7 @@ async function getArticle() {
       theProfileImage.id = "profile_image";
       theProfileImage.src = data[i].user.profile_image;
 
+      
       let anotherEmptyDiv = document.createElement("div"); //tags container
 
       let tagsInArt = document.createElement("p"); //tag
@@ -313,12 +329,30 @@ async function getArticle() {
       yourUsername.id = "username";
       yourUsername.textContent = "@" + data[i].user.username;
 
+      let buttonIcon = document.createElement("i");
+      buttonIcon.classList.add("uil");
+      buttonIcon.classList.add("uil-arrow-right");
+      buttonIcon.classList.add("button__icon");
+
+      let blogButton = document.createElement("span");
+      blogButton.classList.add("article__button");
+      blogButton.classList.add("button");
+      blogButton.classList.add("button--flex");
+      blogButton.classList.add("button--small");
+      blogButton.classList.add("button--link");
+      blogButton.classList.add("services__button");
+      blogButton.textContent = "See Article"
       element.appendChild(articleLink);
+      articleLink.appendChild(publishedDate);
       articleLink.appendChild(theTitle);
       articleLink.appendChild(infoArt);
+      articleLink.appendChild(blogButton);
+      blogButton.appendChild(buttonIcon);
       infoArt.appendChild(emptyDiv);
       emptyDiv.appendChild(theProfileImage);
       infoArt.appendChild(anotherEmptyDiv);
+      anotherEmptyDiv.appendChild(readTime);
+      anotherEmptyDiv.appendChild(articleBy);
       anotherEmptyDiv.appendChild(tagsInArt);
       anotherEmptyDiv.appendChild(yourUsername);
       document.getElementById("article__wrapper").appendChild(element);
@@ -326,5 +360,6 @@ async function getArticle() {
   }
 
   displayMultipleArticles();
+  console.log(data);
 }
 getArticle();
