@@ -705,11 +705,12 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
     border-radius: .25rem;
     box-shadow: 0 2px 4px rgba(0,0,0,.15);
     transition: .2s;
+    contain: none !important;
 }
 
 .services__content:hover {
     box-shadow: 0 4px 16px rgba(0,0,0,.15);
-    transform: scale(1.01);
+    /* transform: scale(1.001); THIS LINE BREAKS THINGS, KEEP IT COMMENTED OUT*/
 }
 
 .services__icon {
@@ -731,6 +732,15 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
 }
 
 .services__button:hover .button__icon{
+    transform: translateX(.25rem);
+}
+
+.services__buttonBlog {
+    cursor: pointer;
+    font-size: var(--small-font-size);
+}
+
+.services__buttonBlog:hover .button__icon{
     transform: translateX(.25rem);
 }
 

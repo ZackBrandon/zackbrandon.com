@@ -342,6 +342,7 @@ async function getArticle() {
       blogButton.classList.add("button--link");
       blogButton.classList.add("services__button");
       blogButton.textContent = "See Article"
+
       element.appendChild(articleLink);
       articleLink.appendChild(publishedDate);
       articleLink.appendChild(theTitle);
