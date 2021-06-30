@@ -15,6 +15,11 @@
         <link rel="stylesheet" href="Assets/CSS/style.css">
 
         <title>Zack Brandon</title>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
     </head>
     <body>
         <!-- HEADER -->
@@ -104,10 +109,9 @@
                                 </g>
                             </svg>
                         </div>
-
                         <div class="home__data">
                             <h1 class="home__title">Hi, I'm Zack</h1>
-                            <h3 class="home__subtitle">Web Designer</h3>
+                            <h3 class="home__subtitle">Web Developer</h3>
                             <p class="home__description">I am a sophomore studying computer science at Taylor University
                                  in Upland, Indiana.</p>
                             <div class="home__buttons">
@@ -149,7 +153,6 @@
                 </div>
             </section>
 
-
             <section class="about section" id="about">
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle"></span>
@@ -174,7 +177,7 @@
                            </div>
                         </div>
                         <p class="about__description">In my free time, I enjoy solving rubik's cubes, playing the
-                         piano, and working on <a href="#portfolio" class="about__link-text">fun computer projects</a> . I love hiking and camping with
+                         piano, and working on <a href="#portfolio" class="link__text">fun computer projects</a> . I love hiking and camping with
                         family and friends. I am also an active participant and adult leader in my local Boy Scout troop.</p>
                          <div class="about__buttons">
                              <a href="Assets/PDF/ZackBrandonResume5-31-21.pdf" target="_blank" class="button button--flex">
@@ -183,6 +186,39 @@
                          </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- BLOG -->
+            <section class="services section blog" id="services">
+                <h2 class="section__title">My Blog</h2>
+                <span class="section__subtitle">Recent Posts</span>
+
+                <!-- COPIED CODE -->
+                <div class="article__wrapper container" id="article__wrapper">
+                    <div class="devArticle">
+                        <a target="_blank" id="devArticle">
+                            <p id="publishedDate"></p>
+                            <h3 id="article_title"></h3>
+                            <div class="article-info">
+                                <div>
+                                    <img id="profile_image" style="width: 50px;" />
+                                </div>
+                                <div>
+                                    <p id="tags"></p>
+                                    <p id="readTime"></p>
+                                    <p id="articleBy"></p>
+                                    <p id="username"></p>
+                                </div>
+                            </div>
+                            <span class="article__button button button--flex button--small button--link services__button">
+                                See Article
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- COPIED CODE -->
+
             </section>
 
             <!-- SKILLS -->
@@ -207,6 +243,17 @@
                             </div>
 
                             <div class="skills__list grid">
+                                
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Webflow</h3>
+                                        <span class="skills__number">95%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__webflow"></span>
+                                    </div>
+                                </div>
+
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">HTML</h3>
@@ -488,7 +535,7 @@
                                 <div>
                                     <h3 class="qualification__title">Mobile Designer</h3>
                                     <span class="qualification__subtitle">
-                                        <a href="https://sacredrootsministry.org" class="qualification__link" target="_blank">
+                                        <a href="http://envisageplanner.com/" class="text__link" target="_blank">
                                             Envisage Planner
                                         </a>
                                         - Indiana
@@ -516,7 +563,7 @@
                                 <div>
                                     <h3 class="qualification__title">Web Freelancer</h3>
                                     <span class="qualification__subtitle">
-                                        <a href="https://sacredrootsministry.org" class="qualification__link" target="_blank">
+                                        <a href="https://sacredrootsministry.org" class="text__link" target="_blank">
                                             Sacred Roots Ministries
                                         </a>
                                     </span>
@@ -677,7 +724,7 @@
                         <!-- PORTFOLIO 0 -->
                         <div class="portfolio__content grid swiper-slide">
                             <a href="https://sacredrootsministry.org" target="_blank">
-                                <img src="Assets/Images/sacredrootscropped.gif" alt="" class="portfolio__img">
+                                <img src="Assets/Images/sacredRoots.png" alt="" class="portfolio__img">
                             </a>
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Sacred Roots Website</h3>
@@ -691,7 +738,7 @@
                         <!-- PORTFOLIO 1 -->
                         <div class="portfolio__content grid swiper-slide">
                             <a href="https://github.com/ZackBrandon/Cellular-Automata" target="_blank">
-                                <img src="Assets/Images/infection.gif" alt="" class="portfolio__img">
+                                <img src="Assets/Images/Infectio.png" alt="" class="portfolio__img">
                             </a>
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Infection Simulation</h3>
@@ -705,7 +752,7 @@
                         <!-- PORTFOLIO 2 -->
                         <div class="portfolio__content grid swiper-slide">
                             <a href="https://github.com/ZackBrandon/Weather-App" target="_blank">
-                                <img src="Assets/Images/weather.gif" alt="" class="portfolio__img">
+                                <img src="Assets/Images/weather.png" alt="" class="portfolio__img">
                             </a>
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Weather App</h3>
@@ -719,7 +766,7 @@
                           <!-- PORTFOLIO 3 -->
                           <div class="portfolio__content grid swiper-slide">
                             <a href="https://github.com/ZackBrandon/battleships/tree/master" target="_blank">
-                                <img src="Assets/Images/battleships.gif" alt="" class="portfolio__img">
+                                <img src="Assets/Images/battleships.png" alt="" class="portfolio__img">
                             </a>
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Battleships AI Simulator</h3>
@@ -864,7 +911,10 @@
             <!-- CONTACT ME -->
             <section class="contact section" id="contact">
                 <h2 class="section__title">Contact Me</h2>
-                <span class="section__subtitle">Send me a message!</span>
+                <span class="section__subtitle">
+                    Or reach out at
+                    <a href="mailto:contact@zackbrandon.com" class="text__link">contact@zackbrandon.com</a>
+                </span>
 
                 <div class="contact__container container">
                     <div class="contact__cards">
