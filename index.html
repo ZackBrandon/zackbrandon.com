@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Hi, I'm Zack! I am a sophomore studying computer science at Taylor University in Upland, Indiana, and I've love to work with you on your next project."/>
 
         <!-- UNICONS -->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
@@ -19,7 +20,7 @@
         <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <!-- <link rel="manifest" href="/site.webmanifest"> -->
     </head>
     <body>
         <!-- HEADER -->
@@ -40,6 +41,11 @@
                             </a>
                         </li>
                         <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
                             <a href="#skills" class="nav__link">
                                 <i class="uil uil-file-alt nav__icon"></i> Skills
                             </a>
@@ -47,11 +53,6 @@
                         <li class="nav__item">
                             <a href="#services" class="nav__link">
                                 <i class="uil uil-briefcase-alt nav__icon"></i> Accomplishments
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Portfolio
                             </a>
                         </li>
                         <li class="nav__item">
@@ -80,13 +81,13 @@
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
-                            <a href="https://www.github.com/heyitszackb" target="_blank" class="home__social-icon">
+                            <a href="https://www.github.com/heyitszackb" rel="noopener" target="_blank" class="home__social-icon">
                                 <i class="uil uil-github-alt"></i>
                             </a>
-                            <a href="https://zackbrandon.medium.com/" target="_blank" class="home__social-icon">
+                            <a href="https://zackbrandon.medium.com/" rel="noopener" target="_blank" class="home__social-icon">
                                 <i class="uil uil-document-layout-left"></i>
                             </a>
-                            <a href="https://twitter.com/heyitszackb" target="_blank" class="home__social-icon">
+                            <a href="https://twitter.com/heyitszackb" rel="noopener" target="_blank" class="home__social-icon">
                                 <i class="uil uil-twitter-alt"></i>
                             </a>
                         </div>
@@ -111,7 +112,7 @@
                         </div>
                         <div class="home__data">
                             <h1 class="home__title">Hi, I'm Zack</h1>
-                            <h3 class="home__subtitle">Web Developer</h3>
+                            <h3 class="home__subtitle">Software Developer</h3>
                             <p class="home__description">I am a sophomore studying computer science at Taylor University
                                  in Upland, Indiana.</p>
                             <div class="home__buttons">
@@ -135,8 +136,9 @@
                 </div>
             </section>
 
-            <!-- ABOUT -->
-            <section class="wrapper">
+
+            <!-- Colors -->
+            <!-- <section class="wrapper">
                 <div class="content__wrapper">
                     <h2>Pick a color</h2>
                     
@@ -151,8 +153,9 @@
                         <li class="color-circle" data-color="#bdc3c7"></li>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
+            <!-- About -->
             <section class="about section" id="about">
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle"></span>
@@ -188,15 +191,124 @@
                 </div>
             </section>
 
+
+            <!-- PORTFOLIO -->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">My most recent projects</span>
+
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- PORTFOLIO 0 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <a href="https://zackbrandon.netlify.app" rel="noopener" target="_blank">
+                                <img src="Assets/Images/sortingVisualizer.png" alt="" class="portfolio__img">
+                            </a>
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Sorting Algorithm Visualizer</h3>
+                                <p class="portfolio__description">This web app was built using React and node.js, and utilizes the Material UI library. Deployed with Netlify.</p>
+                                <a href="https://zackbrandon.netlify.app" rel="noopener" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Try the App
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- PORTFOLIO 1 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <a href="https://sacredrootsministry.org" rel="noopener" target="_blank">
+                                <img src="Assets/Images/sacredRoots.png" alt="" class="portfolio__img">
+                            </a>
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Sacred Roots Website</h3>
+                                <p class="portfolio__description">I worked with Sacred Roots Ministries to develop their website from the ground up using Webflow and their integrated content management system. </p>
+                                <a href="https://sacredrootsministry.org" rel="noopener" target="_blank" class="button button--flex button--small portfolio__button">
+                                    Visit Site
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- PORTFOLIO 2 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <a href="https://github.com/ZackBrandon/Cellular-Automata" rel="noopener" target="_blank">
+                                <img src="Assets/Images/Infectio.png" alt="" class="portfolio__img">
+                            </a>
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Infection Simulation</h3>
+                                <p class="portfolio__description">This simulation handles a dynamic number of viruses. The controller can manipulate diseases by clicking and dragging across the screen.</p>
+                                <a href="https://github.com/ZackBrandon/Cellular-Automata" rel="noopener" target="_blank" class="button button--flex button--small portfolio__button">
+                                    See My Code
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- PORTFOLIO 3 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <a href="https://github.com/ZackBrandon/Weather-App" rel="noopener" target="_blank">
+                                <img src="Assets/Images/weather.png" alt="" class="portfolio__img">
+                            </a>
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Weather App</h3>
+                                <p class="portfolio__description">This project utilizes API calls to openWeather to provide a dynamic display of local and global weather data. Any zip code in the United States is accessible via this app.</p>
+                                <a href="https://github.com/ZackBrandon/Weather-App" rel="noopener" target="_blank" class="button button--flex button--small portfolio__button">
+                                    See My Code
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                          <!-- PORTFOLIO 4 -->
+                          <div class="portfolio__content grid swiper-slide">
+                            <a href="https://github.com/ZackBrandon/battleships/tree/master" rel="noopener" target="_blank">
+                                <img src="Assets/Images/battleships.png" alt="" class="portfolio__img">
+                            </a>
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Battleships AI Simulator</h3>
+                                <p class="portfolio__description">Using C++ and probability density functions, this artificially intelligent program plays the popular game 'Battleships.' This algorithm won the battleships competition at Taylor University.</p>
+                                <a href="https://github.com/ZackBrandon/battleships/tree/master" rel="noopener" target="_blank" class="button button--flex button--small portfolio__button">
+                                    See My Code
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- PORTFOLIO 5 -->
+                        <div class="portfolio__content grid swiper-slide">
+                            <a href="https://github.com/ZackBrandon/MathInterpreter/tree/master" rel="noopener" target="_blank">
+                                <img src="Assets/Images/calc.png" alt="" class="portfolio__img">
+                            </a>
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Command Line Math Interpreter</h3>
+                                <p class="portfolio__description">Input is passed through a lexer, parser, and finally an interpreter to determine the value of the output. The program uses nodes to correctly determine the order of operations.</p>
+                                <a href="https://github.com/ZackBrandon/MathInterpreter/tree/master" rel="noopener" target="_blank" class="button button--flex button--small portfolio__button">
+                                    See My Code
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
             <!-- BLOG -->
-            <section class="services section blog" id="services">
+            <section class="services section blog" id="blog">
                 <h2 class="section__title">My Blog</h2>
                 <span class="section__subtitle">Recent Posts</span>
 
                 <!-- COPIED CODE -->
                 <div class="article__wrapper container" id="article__wrapper">
                     <div class="devArticle">
-                        <a target="_blank" id="devArticle">
+                        <a target="_blank" rel="noopener" id="devArticle">
                             <p id="publishedDate"></p>
                             <h3 id="article_title"></h3>
                             <div class="article-info">
@@ -535,7 +647,7 @@
                                 <div>
                                     <h3 class="qualification__title">Mobile Designer</h3>
                                     <span class="qualification__subtitle">
-                                        <a href="http://envisageplanner.com/" class="text__link" target="_blank">
+                                        <a href="http://envisageplanner.com/" rel="noopener" class="text__link" target="_blank">
                                             Envisage Planner
                                         </a>
                                         - Indiana
@@ -563,7 +675,7 @@
                                 <div>
                                     <h3 class="qualification__title">Web Freelancer</h3>
                                     <span class="qualification__subtitle">
-                                        <a href="https://sacredrootsministry.org" class="text__link" target="_blank">
+                                        <a href="https://sacredrootsministry.org" rel="noopener" class="text__link" target="_blank">
                                             Sacred Roots Ministries
                                         </a>
                                     </span>
@@ -714,99 +826,6 @@
                 </div>
             </section>
 
-            <!-- PORTFOLIO -->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">My most recent projects</span>
-
-                <div class="portfolio__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!-- PORTFOLIO 0 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <a href="https://sacredrootsministry.org" target="_blank">
-                                <img src="Assets/Images/sacredRoots.png" alt="" class="portfolio__img">
-                            </a>
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Sacred Roots Website</h3>
-                                <p class="portfolio__description">I worked with Sacred Roots Ministries to develop their website from the ground up using Webflow and their integrated content management system. </p>
-                                <a href="https://sacredrootsministry.org" target="_blank" class="button button--flex button--small portfolio__button">
-                                    Visit Site
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- PORTFOLIO 1 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <a href="https://github.com/ZackBrandon/Cellular-Automata" target="_blank">
-                                <img src="Assets/Images/Infectio.png" alt="" class="portfolio__img">
-                            </a>
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Infection Simulation</h3>
-                                <p class="portfolio__description">This simulation handles a dynamic number of viruses. The controller can manipulate diseases by clicking and dragging across the screen.</p>
-                                <a href="https://github.com/ZackBrandon/Cellular-Automata" target="_blank" class="button button--flex button--small portfolio__button">
-                                    See My Code
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- PORTFOLIO 2 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <a href="https://github.com/ZackBrandon/Weather-App" target="_blank">
-                                <img src="Assets/Images/weather.png" alt="" class="portfolio__img">
-                            </a>
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Weather App</h3>
-                                <p class="portfolio__description">This project utilizes API calls to openWeather to provide a dynamic display of local and global weather data. Any zip code in the United States is accessible via this app.</p>
-                                <a href="https://github.com/ZackBrandon/Weather-App" target="_blank" class="button button--flex button--small portfolio__button">
-                                    See My Code
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                          <!-- PORTFOLIO 3 -->
-                          <div class="portfolio__content grid swiper-slide">
-                            <a href="https://github.com/ZackBrandon/battleships/tree/master" target="_blank">
-                                <img src="Assets/Images/battleships.png" alt="" class="portfolio__img">
-                            </a>
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Battleships AI Simulator</h3>
-                                <p class="portfolio__description">Using C++ and probability density functions, this artificially intelligent program plays the popular game 'Battleships.' This algorithm won the battleships competition at Taylor University.</p>
-                                <a href="https://github.com/ZackBrandon/battleships/tree/master" target="_blank" class="button button--flex button--small portfolio__button">
-                                    See My Code
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- PORTFOLIO 4 -->
-                        <div class="portfolio__content grid swiper-slide">
-                            <a href="https://github.com/ZackBrandon/MathInterpreter/tree/master" target="_blank">
-                                <img src="Assets/Images/calc.png" alt="" class="portfolio__img">
-                            </a>
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Command Line Math Interpreter</h3>
-                                <p class="portfolio__description">Input is passed through a lexer, parser, and finally an interpreter to determine the value of the output. The program uses nodes to correctly determine the order of operations.</p>
-                                <a href="https://github.com/ZackBrandon/MathInterpreter/tree/master" target="_blank" class="button button--flex button--small portfolio__button">
-                                    See My Code
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    
-                    </div>
-
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-
             <!-- PROJECT IN MIND -->
             <section class="project section">
                 <div class="project__bg">
@@ -835,7 +854,8 @@
                         <div class="testimonial__content swiper-slide">
                             <div class="testimonial__data">
                                 <div class="testimonial__header">
-                                    <img src="Assets/Images/testimonial1.jpeg" alt="" class="testimonial__img">
+                                    <!-- Removing for Best Practices Google Score for now because image is not present, will add at a later time -->
+                                    <!-- <img src="Assets/Images/testimonial1.jpeg" alt="" class="testimonial__img"> -->
 
                                     <div>
                                         <h3 class="testimonial__name">Sarah Smith</h3>
@@ -859,7 +879,8 @@
                         <div class="testimonial__content swiper-slide">
                             <div class="testimonial__data">
                                 <div class="testimonial__header">
-                                    <img src="Assets/Images/testimonial2.jpeg" alt="" class="testimonial__img">
+                                    <!-- Removing for Best Practices Google Score for now because image is not present, will add at a later time -->
+                                    <!-- <img src="Assets/Images/testimonial2.jpeg" alt="" class="testimonial__img"> -->
 
                                     <div>
                                         <h3 class="testimonial__name">Matt Robinson</h3>
@@ -883,7 +904,8 @@
                         <div class="testimonial__content swiper-slide">
                             <div class="testimonial__data">
                                 <div class="testimonial__header">
-                                    <img src="Assets/Images/testimonial3.jpeg" alt="" class="testimonial__img">
+                                    <!-- Removing for Best Practices Google Score for now because image is not present, will add at a later time -->
+                                    <!-- <img src="Assets/Images/testimonial3.jpeg" alt="" class="testimonial__img"> -->
 
                                     <div>
                                         <h3 class="testimonial__name">Raul Harris</h3>
@@ -995,23 +1017,21 @@
                     </ul>
 
                     <div class="footer__socials">
-                        <a href="https://www.facebook.com/heyitszackb" target="_blank" class="footer__social">
+                        <a href="https://www.facebook.com/heyitszackb" rel="noopener" target="_blank" class="footer__social">
                             <i class="uil uil-facebook-f"></i>
                         </a>
-                        <a href="https://www.instagram.com/heyitszackb/?hl=en" target="_blank" class="footer__social">
+                        <a href="https://www.instagram.com/heyitszackb/?hl=en" rel="noopener" target="_blank" class="footer__social">
                             <i class="uil uil-instagram"></i>
                         </a>
-                        <a href="https://twitter.com/heyitszackb" target="_blank" class="footer__social">
+                        <a href="https://twitter.com/heyitszackb" rel="noopener" target="_blank" class="footer__social">
                             <i class="uil uil-twitter-alt"></i>
                         </a>
                     </div>
                 </div>
 
                 <p class="footer__copy">&#169; Zack Brandon - All rights reserved</p>
-                <p class="footer__copy"><i>Thanks to <u><a target="_blank" href="https://www.youtube.com/channel/UCgkDs77BoEhMIgRUB4MKrtQ">Bedimcode on YouTube</a></u> for inspiration for this project.</i></p>
+                <!-- <p class="footer__copy"><i>Thanks to <u><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCgkDs77BoEhMIgRUB4MKrtQ">Bedimcode on YouTube</a></u> for inspiration for this project.</i></p> -->
             </div>
-            
-
         </footer>
 
         <!-- SCROLL TOP -->
@@ -1027,6 +1047,6 @@
         <script src="Assets/JS/main.js"></script>
 
         <!-- JQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     </body>
 </html>

@@ -805,6 +805,7 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
 /* ========== PORTFOLIO ========== */
 .portfolio__container {
     overflow: initial;
+    margin-bottom: 50px;
 }
 
 .portfolio__content {
@@ -1103,6 +1104,7 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
 .blog {
     display: none;
 }
+
 .article__wrapper {
     display: flex;
     /* display: grid; */
@@ -1114,6 +1116,7 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
 }
 
 .devArticle {
+    /* min-width: 100%; */
     margin-bottom: 1.3rem;
     border-radius: 0.25rem;
     width: 100%;
@@ -1432,6 +1435,15 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
         display: grid;
         height: 300px;
         width: 300px;
+    }
+
+    .article__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
+        grid-template-rows: repeat(auto-fit, 300px);
+        grid-gap: 25px;
+        padding: 0px;
+        margin-bottom: -100px;
     }
     .services__container {
     gap: 1.5rem;
