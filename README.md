@@ -26,3 +26,4 @@ TODO LIST:
 - Update skills section with React and node.js
 - Migrate to a tile-based portfolio layout
 - Write my first blogpost and uncomment the blog section
+- Replace resume section with my current (new) resume
