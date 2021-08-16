@@ -289,6 +289,7 @@ async function getArticle() {
       let articleLink = document.createElement("a"); //link
       articleLink.id = "devArticle";
       articleLink.target = "_blank";
+      articleLink.rel = "noopener";
       articleLink.href = data[i].url;
 
       let publishedDate = document.createElement("p");
@@ -343,6 +344,7 @@ async function getArticle() {
       blogButton.classList.add("services__button");
       blogButton.textContent = "See Article"
 
+      
       element.appendChild(articleLink);
       articleLink.appendChild(publishedDate);
       articleLink.appendChild(theTitle);
@@ -364,3 +366,6 @@ async function getArticle() {
   console.log(data);
 }
 getArticle();
+
+let x = 4;
+let y = 10;
