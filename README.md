@@ -27,3 +27,5 @@ TODO LIST:
 - Migrate to a tile-based portfolio layout
 - Write my first blogpost and uncomment the blog section
 - Replace resume section with my current (new) resume
+
+Long term: make this entire website React-based
