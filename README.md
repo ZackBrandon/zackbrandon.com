@@ -20,3 +20,9 @@ How to edit zackbrandon.com
 6). Go to the 'github' section inside of hostinger. Click 'deply' (this might take a minute to complete)
 
 7). Ensure that the changes you made are now live on zackbrandon.com
+
+TODO LIST:
+
+- Update skills section with React and node.js
+- Migrate to a tile-based portfolio layout
+- Write my first blogpost and uncomment the blog section
