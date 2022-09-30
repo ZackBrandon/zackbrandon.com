@@ -558,12 +558,12 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
     background-color: var(--first-color);
 }
 
-.skills__webflow {
-    width: 95%;
+.skills__typescript {
+    width: 60%;
 }
-.skills__html {
-    width: 85%;
-}
+/* .skills__react {
+    width: 80%;
+} */
 .skills__css {
     width: 70%;
 }
@@ -572,6 +572,9 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
 }
 /* Figma */
 .skills__react {
+    width: 30%;
+}
+.skills__figma {
     width: 90%;
 }
 /* Team leadership */
@@ -602,6 +605,16 @@ _::-webkit-full-page-media, _:future, :root .footer__links li{
 .skills__photoshop {
     width: 75%;
 }
+.skills__beginner {
+    width: 30%;
+}
+.skills__intermediate {
+    width: 55%;
+}
+.skills__advanced {
+    width: 90%;
+}
+
 
 .skills__close .skills__list {
     height: 0;
